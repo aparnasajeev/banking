@@ -60,4 +60,23 @@ public class testbanking {
          
          
      }
+     @Test
+     public void testdeposit_and_display(){
+          
+         assertEquals(1200,b1.deposit(200));
+         assertEquals(1200,b1.display());
+         assertEquals(1850,b1.deposit(650));
+         assertEquals(1850,b1.display());
+     
+}
+      @Test
+     public void testwithdraw_and_display(){
+          
+         assertEquals(800,b1.withdraw(200));
+         assertEquals(800,b1.display());
+         assertEquals(650,b1.withdraw(150));
+         assertEquals(650,b1.display());
+     
+     
+}
 }
